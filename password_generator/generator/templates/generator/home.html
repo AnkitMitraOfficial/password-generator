@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<body>
+    <br>
+    <div class="container text-center">
+    <h4>Hello world! Welcome to Password Generator</h4>
+    <form action="{% url 'password' %}">
+        <select name="length">
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12" selected="selected">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+        </select>Length
+        <br>
+
+        <input type="checkbox" name="uppercase">Uppercase<br>
+        <input type="checkbox" name="numbers">Numbers<br>
+        <input type="checkbox" name="special">Special Characters<br>
+        <br>
+
+        <input type="submit" class="btn btn-primary" value="Generate password">
+    </form><br><br>
+    </div>
+
+    <h3>This webite is a part of the Todo Woo</h3>
+    <a href="http://ankitmitra.pythonanywhere.com/signup/" target="_blank" class="btn btn-warning">Todo woo</a>
+    
+</body>
+</html>
